@@ -1,0 +1,9 @@
+# ─────────────────────────────────────
+# requirements.txt
+# AutoGen dependencies and automation tools
+openai
+autogenstudio
+playwright
+fastapi
+streamlit
+pandasa
