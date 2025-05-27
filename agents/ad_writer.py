@@ -14,4 +14,4 @@ class AdWriterAgent(AssistantAgent):
         audience = messages[-1]['content']['target_audience']
 
         ad_copy = f"\n🔥 Great Deal in {location}! 🔥\n{product} for just {price}!\nPerfect for {audience}.\nDM now or call to grab it! 💻"
-        return ad_copy
+        return {"ad_copy": ad_copy}

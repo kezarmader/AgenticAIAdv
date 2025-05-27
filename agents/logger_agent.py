@@ -15,4 +15,4 @@ class LoggerAgent(AssistantAgent):
             writer = csv.writer(f)
             for link in links:
                 writer.writerow([link])
-        return "Logged to ad_log.csv"
+        return {"log_status": "Logged to ad_log.csv"}

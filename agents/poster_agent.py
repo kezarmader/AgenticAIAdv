@@ -2,7 +2,7 @@
 # agents/poster_agent.py
 
 from autogen import AssistantAgent
-from tools.post_to_facebook import post_to_facebook
+from tools.post_to_craigslist import post_to_craigslist
 
 class PosterAgent(AssistantAgent):
     def __init__(self):
@@ -14,9 +14,8 @@ class PosterAgent(AssistantAgent):
         post_links = []
 
         for platform in platforms:
-            if platform == "Facebook":
-                # Assuming post_to_facebook is a function that posts to Facebook and returns the link
-                link = post_to_facebook(ad_text)
+            if platform == "Craigslist":
+                link = post_to_craigslist(ad_text)
                 post_links.append(link)
 
-        return '\n'.join(post_links)
+        return {"posted_links": post_links}
