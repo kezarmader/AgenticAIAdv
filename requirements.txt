@@ -2,8 +2,8 @@
 # requirements.txt
 # AutoGen dependencies and automation tools
 openai
-autogenstudio
+autogen
 playwright
 fastapi
 streamlit
-pandasa
+pandas
