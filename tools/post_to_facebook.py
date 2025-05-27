@@ -1,8 +1,8 @@
 # ─────────────────────────────────────
-# tools/post_to_craigslist.py
+# tools/post_to_facebook.py
 
-def post_to_craigslist(ad_text):
+def post_to_facebook(ad_text):
     # Placeholder for automation logic
-    print("[Simulated Craigslist Posting]")
+    print("[Simulated facebook Posting]")
     print(ad_text)
-    return "https://craigslist.org/fake-post-id"
+    return "https://facebook.com/fake-post-id"
